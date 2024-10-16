@@ -1,3 +1,4 @@
+package LeetCode;
 public class GameOfLife {
     private int[][] directions = new int[][]{{0,1},{1,0},{-1,0},{0,-1},{-1,-1},{-1,1},{1,-1},{1,1}};
     static int[][] board = new int[][]{{0,1,0},{0,0,1},{1,1,1},{0,0,0}};
