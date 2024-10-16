@@ -1,4 +1,7 @@
+import java.util.Collection;
+import java.util.Collections;
 import java.util.LinkedList;
+import java.util.PriorityQueue;
 import java.util.Queue;
 import java.util.Stack;
 
@@ -9,7 +12,8 @@ public class StackDataStructures {
         // queue is a data structure that follows the FIFO (First In First Out) principle
         // enqueue is adding an element to the queue
         // dequeue is removing an element from the queue
-        queue();
+        // queue();
+        priorityQueue();
 
 
     }
@@ -47,5 +51,19 @@ public class StackDataStructures {
         System.out.println("Peek: " + stack.peek());
         System.out.println("Search for B: " + stack.search("B"));
         System.out.println("Search for D: " + stack.search("D"));
+    }
+
+    private static void priorityQueue() {
+        // priority queue is a data structure that allows you to add elements in any order and remove the element with the highest priority
+        // the priority is determined by the natural order of the elements or by a comparator
+        // the element with the highest priority is removed first
+        // if two elements have the same priority, they are removed in the order they were added
+
+        Queue<String> priorityQueue = new PriorityQueue<String>(Collections.reverseOrder());
+        priorityQueue.offer("B");
+        priorityQueue.offer("C");
+        priorityQueue.offer("A");
+        priorityQueue.offer("F");
+        System.out.println("Priority Queue: " + priorityQueue);
     }
 }
